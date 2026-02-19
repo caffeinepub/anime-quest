@@ -1,0 +1,106 @@
+{
+  "kind": "feature_evidence_report",
+  "features": [
+    {
+      "featureId": "feature-create-a-comprehensive-tutorial-onboarding-system-that-explains-game-mechanics-including-how-to-unlock-characters-how-riddle-challenges-work-how-to-view-character-stories-and-how-progress-tracking-functions",
+      "featureTitle": "Create a comprehensive tutorial/onboarding system that explains game mechanics including: how to unlock characters, how riddle challenges work, how to view character stories, and how progress tracking functions",
+      "files": [
+        "frontend/src/components/Layout.tsx",
+        "frontend/src/components/TutorialModal.tsx",
+        "frontend/src/pages/GameHome.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-8"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-redesign-the-ui-with-enhanced-japanese-korean-game-aesthetic-featuring-polished-anime-style-visual-effects-refined-typography-with-better-hierarchy-modern-gradient-schemes-common-in-asian-mobile-games-and-professional-grade-spacing-and-composition-while-maintaining-english-language-for-all-text",
+      "featureTitle": "Redesign the UI with enhanced Japanese/Korean game aesthetic featuring: polished anime-style visual effects, refined typography with better hierarchy, modern gradient schemes common in Asian mobile games, and professional-grade spacing and composition while maintaining English language for all text",
+      "files": [
+        "frontend/src/components/Layout.tsx",
+        "frontend/src/index.css",
+        "frontend/src/pages/CharacterDetail.tsx",
+        "frontend/src/pages/CharacterRoster.tsx",
+        "frontend/tailwind.config.js"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-9"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-add-visual-indicators-and-tooltips-throughout-the-interface-to-guide-users-on-interactive-elements-available-actions-and-game-progression-paths",
+      "featureTitle": "Add visual indicators and tooltips throughout the interface to guide users on interactive elements, available actions, and game progression paths",
+      "files": [
+        "frontend/src/components/CharacterCard.tsx",
+        "frontend/src/components/ProgressTracker.tsx",
+        "frontend/src/components/RiddleChallenge.tsx",
+        "frontend/src/components/Tooltip.tsx",
+        "frontend/src/pages/GameHome.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-10"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-enhance-the-character-cards-with-more-polished-anime-style-visual-effects-including-particle-effects-glow-animations-premium-card-borders-and-dynamic-hover-states-that-match-japanese-korean-game-quality-standards",
+      "featureTitle": "Enhance the character cards with more polished anime-style visual effects including particle effects, glow animations, premium card borders, and dynamic hover states that match Japanese/Korean game quality standards",
+      "files": [
+        "frontend/src/components/CharacterCard.tsx",
+        "frontend/src/hooks/useParticleEffect.ts"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-11"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-improve-the-home-page-layout-with-a-more-engaging-hero-section-better-visual-hierarchy-and-clearer-calls-to-action-that-guide-new-users-through-their-first-interactions",
+      "featureTitle": "Improve the home page layout with a more engaging hero section, better visual hierarchy, and clearer calls-to-action that guide new users through their first interactions",
+      "files": [
+        "frontend/src/pages/GameHome.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-12"
+      ],
+      "confidence": "high"
+    }
+  ]
+}

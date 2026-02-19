@@ -1,0 +1,20 @@
+{
+  "frontend/src/App.tsx": "Main application component that sets up React Router with routes for GameHome, CharacterRoster, and CharacterDetail pages, wrapped with ThemeProvider and Toaster for notifications.",
+  "frontend/src/hooks/useQueries.ts": "Custom React Query hooks for fetching all characters, individual character details, unlocked characters, and unlocking characters with proper cache invalidation.",
+  "frontend/src/components/Layout.tsx": "Main layout component with enhanced Japanese/Korean game aesthetic featuring polished anime-style gradients, animated background elements, tutorial button in navigation, improved typography hierarchy, and smooth transitions.",
+  "frontend/src/components/AuthButton.tsx": "Authentication button component that handles Internet Identity login/logout with loading states and anime-styled UI.",
+  "frontend/src/components/CharacterCard.tsx": "Enhanced character card component with premium anime-style effects including particle animations, sparkle overlays, premium border frames, dynamic glow effects, tooltips, and distinct visual treatments for locked/unlocked states.",
+  "frontend/src/components/CharacterGrid.tsx": "Grid layout component that displays all 20 characters using CharacterCard components with responsive design and loading states.",
+  "frontend/src/components/ProgressTracker.tsx": "Enhanced progress tracking component with improved visual hierarchy, tooltips, refined typography, and polished anime-style effects showing collection completion statistics.",
+  "frontend/src/components/RiddleChallenge.tsx": "Enhanced riddle challenge component with improved visual hierarchy, tooltips explaining mechanics, refined typography, polished anime-style effects, and clear interactive feedback.",
+  "frontend/src/components/UnlockSuccessModal.tsx": "Celebration modal dialog that displays when a character is successfully unlocked with success image and character details.",
+  "frontend/src/components/CharacterStory.tsx": "Component displaying character background story with locked/unlocked states and anime-styled card design.",
+  "frontend/src/pages/GameHome.tsx": "Enhanced homepage with improved hero section using new banner asset, prominent tutorial button, refined visual hierarchy, tooltips for guidance, and polished anime-style design matching Japanese/Korean game standards.",
+  "frontend/src/pages/CharacterRoster.tsx": "Enhanced roster page with improved visual hierarchy, refined typography, tooltips for guidance, and polished anime-style design matching Japanese/Korean game UI standards.",
+  "frontend/src/pages/CharacterDetail.tsx": "Enhanced character detail page with improved visual hierarchy, refined typography, tooltips, and polished anime-style visual effects for character information display.",
+  "frontend/src/index.css": "Enhanced global styles with refined Japanese/Korean game aesthetic featuring richer OKLCH color palette with deeper purples and pinks, professional-grade animations (float, pulse-glow), improved typography hierarchy with better font weights and letter spacing, and custom text shadow utilities.",
+  "frontend/tailwind.config.js": "Extended Tailwind configuration with enhanced gradient schemes, refined shadow utilities for premium depth effects, professional animation timings (float, pulse-glow, shimmer), improved spacing scale, and enhanced font configuration for polished Japanese/Korean game aesthetic.",
+  "frontend/src/components/TutorialModal.tsx": "Comprehensive multi-step tutorial modal component with 5 interactive steps explaining character collection, riddle challenges, stories, and progress tracking using anime-styled design with polished visual effects.",
+  "frontend/src/components/Tooltip.tsx": "Reusable tooltip component wrapper around shadcn/ui Tooltip with anime-styled design for displaying contextual help throughout the interface.",
+  "frontend/src/hooks/useParticleEffect.ts": "Custom React hook that manages canvas-based particle effect animations for character cards with configurable particle count, smooth animation, and proper cleanup with null-initialized refs for React 19 compatibility."
+}

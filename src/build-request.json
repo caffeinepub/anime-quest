@@ -1,0 +1,135 @@
+{
+  "kind": "build_request",
+  "title": "Add game instructions and enhance Japanese/Korean game aesthetic",
+  "projectName": "Anime Quest",
+  "priority": "high",
+  "requirements": [
+    {
+      "id": "REQ-8",
+      "text": "Create a comprehensive tutorial/onboarding system that explains game mechanics including: how to unlock characters, how riddle challenges work, how to view character stories, and how progress tracking functions",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-user-final"
+        ],
+        "quotes": [
+          "their is clear instructions or guidance"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Tutorial system is accessible from the main game home page",
+        "Instructions explain the character unlock system clearly",
+        "Riddle challenge mechanics are explained with examples",
+        "Progress tracking system is documented for users",
+        "Tutorial can be accessed at any time during gameplay"
+      ]
+    },
+    {
+      "id": "REQ-9",
+      "text": "Redesign the UI with enhanced Japanese/Korean game aesthetic featuring: polished anime-style visual effects, refined typography with better hierarchy, modern gradient schemes common in Asian mobile games, and professional-grade spacing and composition while maintaining English language for all text",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-user-final"
+        ],
+        "quotes": [
+          "very unesthetic look , 1/5 rating i will give to this design",
+          "Please make it similar to Japanese or Koreans game but in english"
+        ]
+      },
+      "acceptanceCriteria": [
+        "UI features polished anime-style visual effects and transitions",
+        "Typography hierarchy is clear and professional with appropriate font weights and sizes",
+        "Color gradients and schemes match modern Japanese/Korean mobile game standards",
+        "Spacing and layout composition meet professional game UI standards",
+        "All text remains in English language",
+        "Overall aesthetic quality significantly improved from current state"
+      ]
+    },
+    {
+      "id": "REQ-10",
+      "text": "Add visual indicators and tooltips throughout the interface to guide users on interactive elements, available actions, and game progression paths",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-user-final"
+        ],
+        "quotes": [
+          "their is clear instructions or guidance"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Interactive elements have clear hover states and visual feedback",
+        "Tooltips explain what actions users can take on each screen",
+        "Progress indicators show clear paths to unlock characters",
+        "Visual cues highlight important game mechanics and features",
+        "First-time users can understand available actions without external documentation"
+      ]
+    },
+    {
+      "id": "REQ-11",
+      "text": "Enhance the character cards with more polished anime-style visual effects including particle effects, glow animations, premium card borders, and dynamic hover states that match Japanese/Korean game quality standards",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-user-final"
+        ],
+        "quotes": [
+          "very unesthetic look",
+          "Please make it similar to Japanese or Koreans game"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Character cards feature particle effects or animated elements",
+        "Premium-looking card borders and frames are implemented",
+        "Hover states include dynamic glow or shine effects",
+        "Locked and unlocked states have distinct premium visual treatments",
+        "Overall card design quality matches Japanese/Korean mobile game standards"
+      ]
+    },
+    {
+      "id": "REQ-12",
+      "text": "Improve the home page layout with a more engaging hero section, better visual hierarchy, and clearer calls-to-action that guide new users through their first interactions",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-user-final"
+        ],
+        "quotes": [
+          "their is clear instructions or guidance",
+          "very unesthetic look"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Hero section is visually engaging with clear primary action",
+        "Visual hierarchy clearly distinguishes primary, secondary, and tertiary content",
+        "New users understand what to do first when landing on the page",
+        "Navigation paths to key features are immediately obvious",
+        "Overall layout follows Japanese/Korean game UI conventions"
+      ]
+    }
+  ],
+  "constraints": [
+    "All text must remain in English language",
+    "Preserve existing Internet Identity authentication system",
+    "Maintain the 20-character roster and unlock mechanics",
+    "Keep the riddle challenge system functional",
+    "Do not modify backend character data or unlock logic"
+  ],
+  "nonGoals": [
+    "Translating any content to Japanese or Korean languages",
+    "Adding new game mechanics beyond tutorials and guidance",
+    "Changing the core unlock progression system",
+    "Modifying character backstories or riddle content",
+    "Adding multiplayer or social features"
+  ],
+  "imageRequirements": {
+    "required": [
+      "Tutorial icon illustration with book or guide symbol in anime style (tutorial-icon.dim_128x128.png)",
+      "Sparkle particle effect sprite sheet for character card animations in anime style (sparkle-particles.dim_256x256.png)",
+      "Premium card border frame design with ornate details in gold gradient (card-border-premium.dim_400x500.png)",
+      "Hero banner background with dynamic anime-style gradient and light effects (hero-banner-enhanced.dim_1920x600.png)"
+    ],
+    "edits": []
+  }
+}

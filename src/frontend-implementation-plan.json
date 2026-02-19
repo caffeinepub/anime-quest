@@ -1,0 +1,153 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "Add game instructions and enhance Japanese/Korean game aesthetic",
+  "requirements": [
+    {
+      "id": "REQ-8",
+      "summary": "Create comprehensive tutorial/onboarding system explaining game mechanics",
+      "acceptanceCriteria": [
+        "Tutorial system is accessible from the main game home page",
+        "Instructions explain the character unlock system clearly",
+        "Riddle challenge mechanics are explained with examples",
+        "Progress tracking system is documented for users",
+        "Tutorial can be accessed at any time during gameplay"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/TutorialModal.tsx",
+          "operation": "create",
+          "description": "Create a comprehensive tutorial modal component with multi-step walkthrough explaining character unlocking, riddle challenges, story viewing, and progress tracking. Include the generated tutorial icon asset at frontend/public/assets/generated/tutorial-icon.dim_128x128.png. Use anime-styled design with polished visual effects matching Japanese/Korean game standards."
+        },
+        {
+          "path": "frontend/src/pages/GameHome.tsx",
+          "operation": "modify",
+          "description": "Add tutorial button to the hero section that opens the TutorialModal component. Position prominently with clear visual hierarchy and anime-style hover effects."
+        },
+        {
+          "path": "frontend/src/components/Layout.tsx",
+          "operation": "modify",
+          "description": "Add a help/tutorial icon button in the navigation header that opens the TutorialModal, ensuring tutorial is accessible from any page during gameplay."
+        }
+      ]
+    },
+    {
+      "id": "REQ-9",
+      "summary": "Redesign UI with enhanced Japanese/Korean game aesthetic featuring polished anime-style visual effects and modern gradients",
+      "acceptanceCriteria": [
+        "UI features polished anime-style visual effects and transitions",
+        "Typography hierarchy is clear and professional with appropriate font weights and sizes",
+        "Color gradients and schemes match modern Japanese/Korean mobile game standards",
+        "Spacing and layout composition meet professional game UI standards",
+        "All text remains in English language",
+        "Overall aesthetic quality significantly improved from current state"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/index.css",
+          "operation": "modify",
+          "description": "Enhance global styles with refined Japanese/Korean game aesthetic: improve OKLCH color palette with richer gradients, add professional-grade animations and transitions, refine typography hierarchy with better font weights and letter spacing. Add CSS custom properties for premium visual effects like glows, shimmers, and particle overlays."
+        },
+        {
+          "path": "frontend/tailwind.config.js",
+          "operation": "modify",
+          "description": "Extend Tailwind configuration with modern gradient schemes common in Asian mobile games, enhanced shadow utilities for depth, refined animation timings for smooth polished effects, and professional spacing scale."
+        },
+        {
+          "path": "frontend/src/components/Layout.tsx",
+          "operation": "modify",
+          "description": "Redesign the layout component with enhanced visual effects: add polished anime-style gradients to header/footer, improve navigation typography hierarchy, add smooth transitions, and refine spacing for professional composition."
+        },
+        {
+          "path": "frontend/src/pages/CharacterRoster.tsx",
+          "operation": "modify",
+          "description": "Enhance the roster page with improved visual hierarchy, refined typography for header and title, polished anime-style background effects, and professional spacing that matches Japanese/Korean game UI standards."
+        },
+        {
+          "path": "frontend/src/pages/CharacterDetail.tsx",
+          "operation": "modify",
+          "description": "Redesign character detail page with enhanced anime-style visual effects, improved typography hierarchy for character information, refined color gradients, and professional layout composition."
+        }
+      ]
+    },
+    {
+      "id": "REQ-10",
+      "summary": "Add visual indicators and tooltips to guide users on interactive elements and game progression",
+      "acceptanceCriteria": [
+        "Interactive elements have clear hover states and visual feedback",
+        "Tooltips explain what actions users can take on each screen",
+        "Progress indicators show clear paths to unlock characters",
+        "Visual cues highlight important game mechanics and features",
+        "First-time users can understand available actions without external documentation"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/Tooltip.tsx",
+          "operation": "create",
+          "description": "Create a reusable Tooltip component with anime-styled design for displaying contextual help and guidance throughout the interface. Include smooth fade-in animations and polished visual styling."
+        },
+        {
+          "path": "frontend/src/components/CharacterCard.tsx",
+          "operation": "modify",
+          "description": "Add clear hover states with visual feedback, tooltips explaining locked/unlocked states and how to unlock characters, and visual indicators for interactive elements. Ensure first-time users understand they can click cards to view details or attempt riddles."
+        },
+        {
+          "path": "frontend/src/components/ProgressTracker.tsx",
+          "operation": "modify",
+          "description": "Add tooltips explaining the progress tracking system, visual indicators showing paths to unlock more characters, and enhanced hover states that guide users on their collection journey."
+        },
+        {
+          "path": "frontend/src/components/RiddleChallenge.tsx",
+          "operation": "modify",
+          "description": "Add visual cues and tooltips explaining how riddle challenges work, what happens on correct/incorrect answers, and clear interactive feedback for the input field and submit button."
+        },
+        {
+          "path": "frontend/src/pages/GameHome.tsx",
+          "operation": "modify",
+          "description": "Add tooltips and visual indicators to navigation cards, authentication prompts, and key features. Include clear hover states and guidance for first-time users on what actions are available and how to begin their journey."
+        }
+      ]
+    },
+    {
+      "id": "REQ-11",
+      "summary": "Enhance character cards with polished anime-style visual effects including particle effects and premium borders",
+      "acceptanceCriteria": [
+        "Character cards feature particle effects or animated elements",
+        "Premium-looking card borders and frames are implemented",
+        "Hover states include dynamic glow or shine effects",
+        "Locked and unlocked states have distinct premium visual treatments",
+        "Overall card design quality matches Japanese/Korean mobile game standards"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/CharacterCard.tsx",
+          "operation": "modify",
+          "description": "Transform character cards with premium anime-style effects: integrate particle effects using the generated sparkle sprite sheet at frontend/public/assets/generated/sparkle-particles.dim_256x256.png, apply the premium card border frame at frontend/public/assets/generated/card-border-premium.dim_400x500.png, add dynamic glow and shine hover animations, implement distinct visual treatments for locked vs unlocked states with premium quality matching Japanese/Korean mobile games."
+        },
+        {
+          "path": "frontend/src/hooks/useParticleEffect.ts",
+          "operation": "create",
+          "description": "Create a custom hook for managing particle effect animations on character cards, handling sprite sheet rendering and animation timing for polished visual effects."
+        }
+      ]
+    },
+    {
+      "id": "REQ-12",
+      "summary": "Improve home page layout with engaging hero section and clearer calls-to-action",
+      "acceptanceCriteria": [
+        "Hero section is visually engaging with clear primary action",
+        "Visual hierarchy clearly distinguishes primary, secondary, and tertiary content",
+        "New users understand what to do first when landing on the page",
+        "Navigation paths to key features are immediately obvious",
+        "Overall layout follows Japanese/Korean game UI conventions"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/pages/GameHome.tsx",
+          "operation": "modify",
+          "description": "Redesign the home page with an enhanced hero section using the generated hero banner asset at frontend/public/assets/generated/hero-banner-enhanced.dim_1920x600.png featuring dynamic anime-style gradients and light effects. Improve visual hierarchy with clear distinction between primary (start playing), secondary (view roster), and tertiary actions. Add prominent calls-to-action that guide new users through first interactions. Ensure navigation paths to key features are immediately obvious following Japanese/Korean game UI conventions."
+        }
+      ]
+    }
+  ]
+}
